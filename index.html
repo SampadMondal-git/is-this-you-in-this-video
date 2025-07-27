@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is this you in this video?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="step1" class="step active">
+        <h1>Hey "Sneha"! Is this you in this video?</h1>
+        <p>We have detected a video that may contain your image. Please confirm if it is you.</p>
+        <div class="button">
+            <button id="noButton" onclick="notInterested()">Not interested</button>
+            <button id="yesButton" onclick="nextStep()">Let me see</button>
+        </div>
+    </div>
+
+    <div id="step2" class="step">
+        <h1>Great! Please confirm your identity</h1>
+        <p>We need to verify that you are indeed the person in the video.</p>
+        <div class="button">
+            <button id="confirmButton" onclick="confirmIdentity()">Confirm Identity</button>
+        </div>
+    </div>
+
+    <div id="step3" class="step">
+        <h1>Are you from Harza Kalighat, Kolkata - 700026?</h1>
+        <p>We need to confirm your address.</p>
+        <div class="button">
+            <button id="noButton" onclick="noConfirm()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step4" class="step">
+        <h1>Are you read in Class 12?</h1>
+        <p>We need to confirm your educational background.</p>
+        <div class="button">
+            <button id="noButton" onclick="noConfirm()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step5" class="step">
+        <h1>Do you know any boy named "Sampad Mondal"?</h1>
+        <p>We need to confirm your friends circle.</p>
+        <div class="button">
+            <button id="noButton" onclick="noConfirm()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step6" class="step">
+        <h1>Are you in love with him?</h1>
+        <p>We need to confirm your relationship background.</p>
+        <div class="button">
+            <button id="noButton" onclick="nextStep()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step7" class="step">
+        <h1>Are you sure?</h1>
+        <p>Don't worry, we won't share your details with anyone.</p>
+        <div class="button">
+            <button id="noButton" onclick="prevStep()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step8" class="step">
+        <h1>Do you know "Sampad" viral this video?</h1>
+        <p>You must be don't know about this video.</p>
+        <div class="button">
+            <button id="noButton" onclick="nextStep()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step9" class="step">
+        <h1>Do you really see the video?</h1>
+        <p>You must be don't know about this video.</p>
+        <div class="button">
+            <button id="noButton" onclick="notInterested()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step10" class="step">
+        <h1>One last question! Is your birthday on 1st of August?</h1>
+        <p>This is must needed for the identification.</p>
+        <div class="button">
+            <button id="noButton" onclick="noConfirm()">No</button>
+            <button id="yesButton" onclick="nextStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step11" class="step">
+        <h1>Don't tell us a lie!</h1>
+        <p>Are you sure?</p>
+        <div class="button">
+            <button id="noButton" onclick="prevStep()">No</button>
+            <button id="yesButton" onclick="surpriseStep()">Yes</button>
+        </div>
+    </div>
+
+    <div id="step12" class="step surprise">
+        <h1>Surprise!</h1>
+        <p>Hope this little surprise finds you well. Just a small way to make your day feel a bit more special.</p>
+        <div class="button">
+            <button id="finalButton" onclick="finalStep()">Open the present!</button>
+        </div>
+    </div>
+
+    <div id="step13" class="step final">
+        <h1>Happiest birthday to you, my dearest Pookiemon!</h1>
+        <div class="frame-container">
+            <img src="asset/frame.png" alt="frame">
+            <div class="video-container">
+                <video id="video" loop>
+                    <source src="asset/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <p>It's a special day for you! I don't know why you hate this day but it's special for me. At the end I just say
+            one thing that "I love you the most Sneha"! Happy birthday to you!</p>
+        <p>I don't have anything to say more.</p>
+        <div class="button">
+            <button id="finishButton" onclick="createConfetti()">Click me!<3</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
